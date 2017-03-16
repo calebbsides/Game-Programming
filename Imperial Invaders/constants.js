@@ -1,0 +1,56 @@
+var CANVAS_WIDTH = 500,
+	CANVAS_HEIGHT = 500,
+	TIME_PER_FRAME = 33,
+	GAME_FONTS = "bold 12px sans-serif";
+
+var XWING_PATH = "img/xwing.png";
+var BLAST_PATH = "img/greenBlast.png";
+var FIGHTER_PATH = "img/tieFighter.png";
+var HIT_PATH = "img/explosion.png";
+var ATTACK_PATH = "img/redBlast.png";
+var SHIELD_PATH = "img/shield.png";
+var BACKGROUND_PATH = "img/background.png";
+var BOSS_PATH = "img/deathStar.png";
+var BOSS_BLAST_PATH = "img/bossBlast.png";
+
+var XWING = new Image();
+var BLAST = new Image();
+var FIGHTER = new Image();
+var HIT = new Image();
+var ATTACK = new Image();
+var SHIELD = new Image();
+var BACKGROUND = new Image();
+var BOSS = new Image();
+var BOSS_BLAST = new Image();
+
+XWING.src = XWING_PATH;
+BLAST.src = BLAST_PATH;
+FIGHTER.src = FIGHTER_PATH;
+HIT.src = HIT_PATH;
+ATTACK.src = ATTACK_PATH;
+SHIELD.src = SHIELD_PATH;
+BACKGROUND.src = BACKGROUND_PATH;
+BOSS.src = BOSS_PATH;
+BOSS_BLAST.src = BOSS_BLAST_PATH;
+
+var XWING_WIDTH = 50,
+	XWING_HEIGHT = 50,
+    BLAST_HEIGHT = 10,
+    BLAST_WIDTH = 2,
+    FIGHTER_HEIGHT = 30,
+    FIGHTER_WIDTH = 30,
+    ATTACK_HEIGHT = 10,
+    ATTACK_WIDTH = 2,
+    SHIELD_WIDTH = 150,
+    SHIELD_HEIGHT = 150,
+    BACKGROUND_WIDTH = 500,
+    BACKGROUND_HEIGHT = 500,
+    BOSS_HEIGHT = 30,
+    BOSS_WIDTH = 30,
+    BOSS_BLAST_WIDTH = 5,
+    BOSS_BLAST_HEIGHT = 10,
+    HIT_HEIGHT = FIGHTER_HEIGHT,
+    HIT_WIDTH = FIGHTER_WIDTH,
+    BLAST_START = CANVAS_HEIGHT - XWING_HEIGHT*2 - BLAST_HEIGHT,
+	XWING_START_X = CANVAS_WIDTH/2 - XWING_WIDTH/2,
+	XWING_START_Y = CANVAS_HEIGHT - XWING_HEIGHT * 2;
