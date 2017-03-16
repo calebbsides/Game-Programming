@@ -5,8 +5,7 @@ ig.module(
     'impact.game',
     'game.levels.level1',
     'game.levels.level2',
-    'game.levels.level3',
-    'plugins.impact-splash-loader'
+    'game.levels.level3'
 )
 
 .defines(function(){
@@ -102,7 +101,7 @@ StartScreen = ig.Game.extend({
     }
 });
     
-ig.main( '#canvas', StartScreen, 60, 500, 160, 2, ig.ImpactSplashLoader );
+ig.main( '#canvas', StartScreen, 60, 500, 160, 2 );
 
 });
 
