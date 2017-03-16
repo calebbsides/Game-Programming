@@ -101,7 +101,7 @@ StartScreen = ig.Game.extend({
     }
 });
     
-ig.main( '#canvas', StartScreen, 60, 500, 160, 2 );
+ig.main( '#canvas', StartScreen, 60, 500, 160, 1 );
 
 
 });
