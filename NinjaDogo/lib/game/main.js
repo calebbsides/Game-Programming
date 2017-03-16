@@ -18,7 +18,7 @@ MyGame = ig.Game.extend({
     
         numBones: 0,
         lives: 3,
-        statText: new ig.Font( 'media/myFont.png' ),
+//        statText: new ig.Font( 'media/myFont.png' ),
     
 	init: function() {
         this.loadLevel( LevelLevel1 );
@@ -61,24 +61,24 @@ MyGame = ig.Game.extend({
 	draw: function() {
 		this.parent();
         
-        var player = this.getEntitiesByType(EntityPlayer)[0];
-        
-        if(player) {
-            this.statText.draw( "LIVES: " + ig.game.lives, 10, 10);
-            this.statText.draw( "HEALTH: " + player.health, 10, 30);
-            this.statText.draw( "BONES:" + this.numBones + "/5", 10, 50);
-        }
-        
-        var topdown = this.getEntitiesByType(EntityTopdown)[0];
-        if (topdown) {
-             this.statText.draw( "BONES:" + this.numBones + "/5", 10, 10);
-        }
+//        var player = this.getEntitiesByType(EntityPlayer)[0];
+//        
+//        if(player) {
+//            this.statText.draw( "LIVES: " + ig.game.lives, 10, 10);
+//            this.statText.draw( "HEALTH: " + player.health, 10, 30);
+//            this.statText.draw( "BONES:" + this.numBones + "/5", 10, 50);
+//        }
+//        
+//        var topdown = this.getEntitiesByType(EntityTopdown)[0];
+//        if (topdown) {
+//             this.statText.draw( "BONES:" + this.numBones + "/5", 10, 10);
+//        }
         
 	},
 });
 
 StartScreen = ig.Game.extend({
-    instructText: new ig.Font( 'media/myFont.png' ),
+//    instructText: new ig.Font( 'media/myFont.png' ),
     background: new ig.Image('media/StartScreen.png'), 
         
     init: function() {
@@ -97,7 +97,7 @@ StartScreen = ig.Game.extend({
         this.background.draw(0,0);
         var x = ig.system.width / 2;
         var y = ig.system.height - 30;
-        this.instructText.draw( 'Press Spacebar To Start', x, y, ig.Font.ALIGN.CENTER ); 
+//        this.instructText.draw( 'Press Spacebar To Start', x, y, ig.Font.ALIGN.CENTER ); 
     }
 });
     
